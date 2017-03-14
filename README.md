@@ -2,8 +2,8 @@
 
 A functional MEAN Stack web application and personal portfolio.
 
-[Live App] (https://brandonr-portfolio.herokuapp.com/)
-[LinkedIn] (https://www.linkedin.com/in/brandon-roth-159b62130)
+[Live App](https://brandonr-portfolio.herokuapp.com/)
+[LinkedIn](https://www.linkedin.com/in/brandon-roth-159b62130)
 
 ### Functional Code Design
 Written with efficient, responsive, and maintainable code
