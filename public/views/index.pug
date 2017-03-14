@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Web ')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    
+    base(href='/')
+    
+    title Portfolio: Brandon Roth
+    
+    // CSS
+    link(rel='icon' href='img/favicon.ico')
+    link(rel='stylesheet', href='css/vendor/normalize.min.css')
+    link(rel='stylesheet', href='libs/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/queries.css')
+    link(rel='stylesheet', href='css/vendor/animate.min.css')
+    link(rel='stylesheet', href='css/vendor/fa/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/jquery.fancybox.css')
+    
+    // JS
+    script(src='libs/angular/angular.min.js')
+    script(src='libs/angular-route/angular-route.min.js')
+    
+    //Angular Dynamic Content
+    script(src='js/controllers/MainCtrl.js')
+    script(src='js/controllers/AboutCtrl.js')
+    script(src='js/controllers/PortCtrl.js')
+    script(src='js/controllers/DocsCtrl.js')
+    script(src='js/controllers/ContactCtrl.js')
+    script(src='js/appRoutes.js')
+    script(src='js/app.js')
+  body(ng-app='app', ng-controller='MainController')
+  
+    div(ng-view='' autoscroll='true')
+    
+    footer#footer
+      .container
+        .row
+          .col-sm-6
+            p
+              |&copy; All Rights Reserved | Brandon Roth | <a target='_blank' href='http://www.free-css.com/free-css-templates/page197/sedna'>Sedna Template</a>
+          .col-sm-6
+            ul.pull-right
+              li
+                a.btn-social.btn-outline(href='mailto:brandon.roth892@gmail.com')
+                  i.fa.fa-envelope
+              li
+                a.btn-social.btn-outline(href='https://github.com/brandonroth92' target='_blank')
+                  i.fa.fa-fw.fa-github
+              li
+                a.btn-social.btn-outline(href='https://www.linkedin.com/in/brandon-roth-159b62130' target='_blank')
+                  i.fa.fa-fw.fa-linkedin
+      
+    script(src='libs/jquery/dist/jquery.min.js')
+    script(src='libs/bootstrap/dist/js/bootstrap.min.js')
+    script(src='js/main.js')
+    script(src='js/vendor/classie.js')
+    script(src='js/vendor/jquery.fancybox.pack.js')
+    script(src='js/vendor/jquery.isotope.min.js')
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js')
+    

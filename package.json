@@ -1,0 +1,40 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A single page web application using the MEAN stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "start": "node server.js"
+  },
+  "author": "Brandon Roth",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "bower": "^1.8.0",
+    "express": "^4.14.1",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.8.5",
+    "pug": "^2.0.0-beta11",
+    "serve-favicon": "^2.4.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-mocha": "^4.0.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "karma-chrome-launcher": "^2.0.0",
+    "mocha": "^3.2.0",
+    "pump": "^1.0.2"
+  }
+}

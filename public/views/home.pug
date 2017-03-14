@@ -1,0 +1,69 @@
+section.hero
+  section.navigation.transform
+    header.transform.border
+      .header-content
+        .logo
+          a(href='/')
+            img(src='img/brandon-logo.png', alt='Brandon logo')
+        .header-nav
+          nav
+            ul.primary-nav
+              li
+                a(href='/') Home
+              li
+                a(href='/about') About Me
+              li
+                a(href='/portfolio') Portfolio
+              li
+                a(href='/docs') Api Documents
+            ul.visitor-actions
+              li
+                a.btn-white.btn-small(href='/contact') Contact Me
+        .navicon
+          a.nav-toggle(href='')
+            span
+  .container
+    .row
+      .col-md-10.col-md-offset-1
+        .hero-content.text-center
+          h1 Develop <i class="fa fa-circle"></i> Test <i class="fa fa-circle"></i> Maintain
+          p.intro {{tagline}}
+          a.btn.btn-large.btn-fill.btn-margin-right(href='https://github.com/brandonroth92' target='_blank')
+            i.fa.fa-fw.fa-github
+            | GitHub
+          a.btn.btn-large.btn-margin-right(href='https://www.linkedin.com/in/brandon-roth-159b62130' target='_blank')
+            | Linked
+            i.fa.fa-fw.fa-linkedin
+            
+section#features.features.section-padding
+  .container
+    .row
+      .col-xs-12.col-md-offset-1.col-md-5
+        img(src='img/app-structure.jpg', alt='application structure diagram')
+      .col-xs-12.col-md-5
+        .feature-list
+          h3 About this portfolio application
+          p(id='feature-tagline')
+            | A web application created using the MEAN Stack and industry best practices
+          ul.features-stack
+            li.feature-item
+              .feature-icon
+                span.icon.glyphicon.glyphicon-phone
+              .feature-content
+                h5 Functional code design
+                p Written with efficient, responsive, and maintainable code
+            li.feature-item
+              .feature-icon
+                span.icon.glyphicon.glyphicon-road
+              .feature-content
+                h5 Includes a REST API
+                p
+                  | Fully tested REST API with CRUD functionality
+            li.feature-item
+              .feature-icon
+                span.icon.glyphicon.glyphicon-list-alt
+              .feature-content
+                h5 Developed with industry best practices
+                p 
+                  | Tested with Mocha and Chai, linted with ESLint, gulp-automated build process, git version control, pug templating language
+    

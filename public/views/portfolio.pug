@@ -1,0 +1,105 @@
+section.secondary-hero
+  section.navigation.fixed
+    header
+      .header-content
+        .logo
+          a(href='/')
+            img(src='img/brandon-logo.png', alt='Brandon logo')
+        .header-nav
+          nav
+            ul.primary-nav
+              li
+                a(href='/') Home
+              li
+                a(href='/about') About Me
+              li
+                a(href='/portfolio') Portfolio
+              li
+                a(href='/docs') Api Documents
+            ul.visitor-actions
+              li
+                a.btn-white.btn-small(href='/contact') Contact Me
+        .navicon
+          a.nav-toggle(href='')
+            span
+            
+section.portfolio-header
+  .container
+    .row
+      .col-xs-6
+        h2 Portfolio
+      .col-xs-6
+      ul.portfolio-filter
+        li
+          a.active(href='#', data-filter='*') All
+        li
+          a(href='#', data-filter='.frontend') Front-end
+        li
+          a(href='#', data-filter='.microapi') Micro-API
+        li
+          a(href='#', data-filter='.fullstack') Full-stack
+section.portfolio
+  .container
+    .row
+      ul.portfolio-items.col-3
+        li.portfolio-item.frontend
+          .item-inner
+            img(src='img/portfolio/TwitchTv.jpg')
+            h5 TwitchTV Streamer Information App
+            .overlay
+              a.preview.btn.btn-fill(href='https://brandonroth92.github.io/TwitchTVApp/' target='_blank') GitHub Pages
+              a.preview.btn(href='https://github.com/brandonroth92/TwitchTVApp' target='_blank') GitHub
+        li.portfolio-item.frontend
+          .item-inner
+            img(src='img/portfolio/WeatherApp.jpg')
+            h5 Local Weather Application
+            .overlay
+              a.preview.btn.btn-fill(href='https://github.com/brandonroth92/WeatherApp' target='_blank') GitHub
+        li.portfolio-item.fullstack
+          .item-inner
+            img(src='img/portfolio/portfolio.jpg')
+            h5 Mean Stack Portfolio Application
+            .overlay
+              a.preview.btn.btn-fill(href='https://github.com/brandonroth92/Portfolio' target='_blank') GitHub
+        li.portfolio-item.frontend
+          .item-inner
+            img(src='img/portfolio/jscalculator.jpg')
+            h5 JavaScript Calculator
+            .overlay
+              a.preview.btn.btn-fill(href='https://brandonroth92.github.io/JavaScriptCalculator/' target='_blank') GitHub Pages
+              a.preview.btn(href='https://github.com/brandonroth92/JavaScriptCalculator' target='_blank') GitHub
+        li.portfolio-item.frontend
+          .item-inner
+            img(src='img/portfolio/wikipedia.jpg')
+            h5 Wikipedia Viewer
+            .overlay
+              a.preview.btn.btn-fill(href='https://brandonroth92.github.io/WikipediaViewer/' target='_blank') GitHub Pages
+              a.preview.btn(href='https://github.com/brandonroth92/WikipediaViewer' target='_blank') GitHub
+        li.portfolio-item.frontend
+          .item-inner
+            img(src='img/portfolio/jokegenerator.jpg')
+            h5 Chuck Norris Joke Generator
+            .overlay
+              a.preview.btn.btn-fill(href='https://brandonroth92.github.io/ChuckJokeGenerator/' target='_blank') GitHub Pages
+              a.preview.btn(href='https://github.com/brandonroth92/ChuckJokeGenerator' target='_blank') GitHub
+        li.portfolio-item.microapi
+          .item-inner
+            img(src='img/portfolio/timestamp-api.jpg')
+            h5 Timestamp Microservice API
+            .overlay
+              a.preview.btn.btn-fill(href='https://brandonr-ts-micro.herokuapp.com/' target='_blank') Heroku App
+              a.preview.btn(href='https://github.com/brandonroth92/Timestamp-Microservice' target='_blank') GitHub
+        li.portfolio-item.microapi
+         .item-inner
+           img(src='img/portfolio/urlshort-api.jpg')
+           h5 URL Shortener Microservice API
+           .overlay
+             a.preview.btn.btn-fill(href='https://brandonr-shorturl.herokuapp.com/' target='_blank') Heroku App           
+             a.preview.btn(href='https://github.com/brandonroth92/URL-Shortener' target='_blank') GitHub
+        li.portfolio-item.microapi
+          .item-inner
+            img(src='img/portfolio/requestheader-api.jpg')
+            h5 Request Header Parser Microservice API
+            .overlay
+              a.preview.btn.btn-fill(href='https://brandonr-header-micro.herokuapp.com/' target='_blank') Heroku App           
+              a.preview.btn(href='https://github.com/brandonroth92/request-header-parser' target='_blank') GitHub
