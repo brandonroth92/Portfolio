@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
+// require api router for /api route
 router.use('/api', require('./api'));
 
 // serve angular front end files from root path

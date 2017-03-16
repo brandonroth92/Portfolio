@@ -39,6 +39,7 @@ router.route('/teams')
 
 // routes that end in /teams/:team_id ======================
 router.route('/teams/:team_id')
+// find and return specific team by id
 .get(function (req, res) {
   Team.findById(req.params.team_id, function (err, team) {
     if (err) {
@@ -47,6 +48,7 @@ router.route('/teams/:team_id')
     res.json(team);
   });
 })
+// update specific team by id
 .put(function (req, res) {
   Team.findById(req.params.team_id, function (err, team) {
     if (err) {
@@ -61,6 +63,7 @@ router.route('/teams/:team_id')
     });
   });
 })
+// delete specific team by id
 .delete(function (req, res) {
   Team.remove({
     _id: req.params.team_id

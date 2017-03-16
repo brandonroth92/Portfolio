@@ -1,3 +1,4 @@
+// create Team model and export
 var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 

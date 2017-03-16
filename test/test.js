@@ -11,16 +11,20 @@ var should = chai.should();
 
 chai.use(chaiHttp);
 
+// test all accepted API requests as well as database connection
 describe('/api', function () {
   
+  // clear Team collection from test database before each test to ensure test accuracy
   beforeEach(function () {
     return Team.remove({});
   });
   
+  // clear Team collection from test database after running all tests
   after(function () {
     return Team.remove({});
   });
   
+  // get request to /api/teams should return an array of JSON objects represeting all teams in the collection
   describe('/GET teams', function () {
     it('should GET all the teams', function (done) {
       chai.request(server)
@@ -34,6 +38,7 @@ describe('/api', function () {
     });
   });
   
+  // post request to /api/teams should not post a team without all required fields being submitted
   describe('/POST team', function (done) {
     it('should not POST a team without league field', function (done) {
       const team = {
@@ -52,6 +57,7 @@ describe('/api', function () {
         });
     });
     
+    // post request to /api/teams should post a team when all required fields are submitted
     it('should POST a team', function (done) {
       const team = {
         name: 'Yankees',
@@ -73,6 +79,7 @@ describe('/api', function () {
     });
   });
   
+  // get request to /api/teams/:team_id should return a JSON object representing the team with the given id
   describe('GET/:id team', function () {
     it('should get a team by the given id', function (done) {
       const newTeam = new Team({
@@ -97,6 +104,7 @@ describe('/api', function () {
     });
   });
   
+  // put request to /api/teams/:team_id should update the document with the given id and return a message + the updated object
   describe('PUT/:id team', function () {
     it('should update a team given the id', function (done) {
       const newTeam = new Team({
@@ -119,6 +127,7 @@ describe('/api', function () {
     });
   });
   
+  // delete request to /api/teams/:team_id should delete the team with the given id and return a message
   describe('DELETE/:id team', function () {
     it('should delete a team given the id', function (done) {
       const newTeam = new Team({

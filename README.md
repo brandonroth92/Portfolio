@@ -1,8 +1,8 @@
 ## Portfolio Application
 
-A functional MEAN Stack web application and personal portfolio.
+A functional MEAN Stack web application and personal portfolio
 
-[Live App](https://brandonr-portfolio.herokuapp.com/) <br/>
+[www.rothwebdevelopment.com](www.rothwebdevelopment.com) <br/>
 [LinkedIn](https://www.linkedin.com/in/brandon-roth-159b62130)
 
 ### Functional Code Design

@@ -27,11 +27,11 @@ section.docs-intro
   .container
     .row
       .col-md-12
-        h3 Instructions for using the built-in REST API
+        h3 Instructions for using the REST API
     .row
       .col-md-6.col-sm-12.col-xs-12.leftcol
         p.
-          The API is simple to use, handles GET, POST, PUT, and DELETE requests, and communicates to a MongoDB database hosted by <a href='https://www.mlab.com'>mLab</a>. By using the API, users can query and modify a collection of sports teams. For now, users must use an application or browser extension to send certain HTTP requests to the API. I recommend Google Chrome's Postman extension. However, I'm working on a GUI interface to handle those requests. When it is completed, I will add it to the application.
+          The API is simple to use, handles GET, POST, PUT, and DELETE requests, and communicates to a MongoDB database hosted by <a href='https://www.mlab.com'>mLab</a>. By using the API, users can query and modify a collection of sports teams. For now, users must use an application or browser extension to send certain HTTP requests to the API. I recommend Google Chrome's Postman extension. However, I'm working on a GUI interface to handle those requests. When it is completed, I will add it to this web application.
       .col-md-6.col-sm-12.col-xs-12.rightcol
         img(src='img/model.jpg')
         
@@ -42,7 +42,7 @@ section.testing
         h3 Testing
       .col-xs-12
         p.
-          By setting <code>NODE_ENV='test'</code> and starting the server, the application will attempt to connect to a local instance of MongoDB. This is used for running the Mocha tests contained in the test/test.js file which test all operations of the API. By starting the server with <code>NODE_ENV='global'</code>, or without the NODE_ENV variable set, the application will connect to the MongoDB database hosted by <a href='https://www.mlab.com'>mLab</a> for this application. This functionality is accomplished by the config/index.js file.
+          By setting <code>NODE_ENV='test'</code> prior to starting the server, the application will attempt to connect to a local instance of MongoDB. This is used for running the Mocha tests contained in the test/test.js file which test all operations of the API. By starting the server with <code>NODE_ENV='global'</code>, or without the NODE_ENV variable set, the application will connect to the MongoDB database hosted by <a href='https://www.mlab.com'>mLab</a> for this application. This functionality is accomplished by the config/index.js file. The test/test.js file sets <code>NODE_ENV='test'</code> before starting the server.
           
 section.requests
   .container

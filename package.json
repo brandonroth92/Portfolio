@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "A single page web application using the MEAN stack",
+  "description": "A fully functional MEAN Stack web application and personal portfolio",
   "main": "server.js",
   "scripts": {
     "test": "mocha --timeout 10000",
